@@ -1,6 +1,14 @@
-correr 
+# Reuter Example React.js
 
-npm install --save react-router-dom
+### Instala las dependencias necesarias del proyecto:
+```shell
+$ yarn
+```
+
+### Ejecuta el servidor de desarrollo
+```shell
+$ yarn start 
+```
 
 dentro de index.js colocamos el componente App dentro del componente BrowserRouter
 
@@ -21,7 +29,9 @@ BrowserRouter va a buscar cualquier componente Route dentro de App y va a mostra
 Aquellos componentes que deseamos o no mostrar de acuerdo a la url (las páginas) las colocamos dentro del componente
 llamado **Route** 
 
-        <Route path="/" component={HomeComp}/>
-        <Route path="/pagina1" component={Pagina1Comp}/>
-        <Route path="/pagina2" component={Pagina2Comp}/>
+```js
+    <Route path="/" component={HomeComp}/>
+    <Route path="/pagina1" component={Pagina1Comp}/>
+    <Route path="/pagina2" component={Pagina2Comp}/>
+```
         
