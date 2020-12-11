@@ -9,22 +9,26 @@ import Page2 from './components/Page2';
 
 
 
-export default class App extends Component {
+class App extends Component {
   render() {
     return (
-      <div>
-       
-        <ul className="menu">
-          <li><Link to="/" Home> Home </Link></li>
-          <li><Link to="/pagina1" Pagina1> Pagina 1 </Link></li>
-          <li><Link to="/pagina2" Pagina2> Pagina 2</Link></li>
-        </ul>
+      <>
+        
+        <nav className="navbar">
+          <ul>
+            <li><Link to="/" Home> Home </Link></li>
+            <li><Link to="/pagina1" Pagina1> Pagina 1 </Link></li>
+            <li><Link to="/pagina2" Pagina2> Pagina 2</Link></li>
+          </ul>
+        </nav>
 
         <Route exact path="/" component={Home}/>
         <Route path="/pagina1" component={Page1}/>
         <Route path="/pagina2" component={Page2}/>
 
-      </div>
+      </>
     );
   }
 }
+
+export default App;
